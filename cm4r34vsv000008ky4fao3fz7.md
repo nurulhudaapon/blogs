@@ -2,7 +2,7 @@
 title: "2024 Year in Review"
 seoTitle: "Reflecting on 2024"
 seoDescription: "2024 highlights: travel, career growth, spiritual journeys, and significant personal and societal change"
-datePublished: Mon Dec 16 2024 13:43:12 GMT+0000 (Coordinated Universal Time)
+datePublished: 2024-12-16T13:43:12.895Z
 cuid: cm4r34vsv000008ky4fao3fz7
 slug: 2024-year-in-review
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1734356363631/e8463120-43b0-47ba-a778-a7090b04cbe2.png
@@ -15,13 +15,13 @@ tags: 2024-year-in-review, life-update
 
 Here is a quick summary of what the events that took place in this year!
 
-* **Saint Martin Tour:** It was my first time visiting a beach and an island, and it was fantastic!
+*   **Saint Martin Tour:** It was my first time visiting a beach and an island, and it was fantastic!
     
-* **Umrah**: Alhamdulillah, I was able to complete my Umrah by the mercy of the Almighty.
+*   **Umrah**: Alhamdulillah, I was able to complete my Umrah by the mercy of the Almighty.
     
-* **CodeSamurai’24:** For the first time, I participated in a national hackathon and was part of the winning team, placing 9th.
+*   **CodeSamurai’24:** For the first time, I participated in a national hackathon and was part of the winning team, placing 9th.
     
-* **Promotion:** I got promoted to the Staff Engineer role at my current workplace.
+*   **Promotion:** I got promoted to the Staff Engineer role at my current workplace.
     
 
 # Saint Martin Tour
