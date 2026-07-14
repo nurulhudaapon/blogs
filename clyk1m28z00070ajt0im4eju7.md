@@ -1,17 +1,18 @@
 ---
-title: "30 Programming Design Patterns"
+title: "Programming Design Patterns"
 datePublished: Sat Jul 13 2024 11:27:57 GMT+0000 (Coordinated Universal Time)
 cuid: clyk1m28z00070ajt0im4eju7
 slug: 30-programming-design-patterns
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720871678776/95a92760-1947-48b7-b6f9-7c767960909f.png
 
 ---
+### **Singleton Pattern**
 
-### 1. **Singleton Pattern**
 Ensures a class has only one instance and provides a global point of access to it.
 
 **When to use**: When exactly one instance of a class is needed to control the action.  
 **Why to use**: To prevent multiple instances of a class and provide a single point of access.
+
 ```typescript
 class Singleton {
     private static instance: Singleton;
@@ -28,13 +29,13 @@ const instance2 = Singleton.getInstance();
 console.log(instance1 === instance2); // true
 ```
 
----
+### **Factory Pattern**
 
-### 2. **Factory Pattern**
 Creates objects without specifying the exact class of object that will be created.
 
 **When to use**: When the exact type of the object is determined at runtime.  
 **Why to use**: To encapsulate object creation.
+
 ```typescript
 interface Product {
     operation(): string;
@@ -66,13 +67,13 @@ const product1 = Creator.factoryMethod('1');
 console.log(product1.operation()); // ConcreteProduct1
 ```
 
----
+### **Abstract Factory Pattern**
 
-### 3. **Abstract Factory Pattern**
 Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 **When to use**: When families of related objects need to be created.  
 **Why to use**: To ensure consistency among products.
+
 ```typescript
 interface AbstractFactory {
     createProductA(): AbstractProductA;
@@ -115,13 +116,13 @@ console.log(productA1.usefulFunctionA()); // The result of ProductA1
 console.log(productB1.usefulFunctionB()); // The result of ProductB1
 ```
 
----
+### **Builder Pattern**
 
-### 4. **Builder Pattern**
 Separates the construction of a complex object from its representation, allowing the same construction process to create various representations.
 
 **When to use**: When an object needs to be created with various configurations.  
 **Why to use**: To construct a complex object step by step.
+
 ```typescript
 class Product {
     public parts: string[] = [];
@@ -156,13 +157,13 @@ const product = builder.getProduct();
 product.listParts(); // Product parts: PartA, PartB
 ```
 
----
+### **Prototype Pattern**
 
-### 5. **Prototype Pattern**
 Creates new objects by copying an existing object, known as the prototype.
 
 **When to use**: When the cost of creating a new object is expensive.  
 **Why to use**: To reduce the cost of creating objects.
+
 ```typescript
 class Prototype {
     public primitive: any;
@@ -198,13 +199,13 @@ console.log(clone.component); // Date object
 console.log(clone.circularReference.prototype === prototype); // false
 ```
 
----
+### **Adapter Pattern**
 
-### 6. **Adapter Pattern**
 Allows incompatible interfaces to work together.
 
 **When to use**: When you want to use an existing class, but its interface is not compatible with the rest of your code.  
 **Why to use**: To enable collaboration between classes with incompatible interfaces.
+
 ```typescript
 class Target {
     request(): string {
@@ -236,58 +237,13 @@ const adapter = new Adapter(adaptee);
 console.log(adapter.request()); // Adapter: (TRANSLATED) Special behavior of the Adaptee.
 ```
 
----
+### **Composite Pattern**
 
-### 7. **Bridge Pattern**
-Decouples an abstraction from its implementation so that the two can vary independently.
-
-**When to use**: When you want to separate a monolithic class into several class hierarchies.  
-**Why to use**: To avoid a permanent binding between an abstraction and its implementation.
-```typescript
-interface Implementation {
-    operationImplementation(): string;
-}
-
-class ConcreteImplementationA implements Implementation {
-    operationImplementation(): string {
-        return 'ConcreteImplementationA: Here\'s the result on the platform A.';
-    }
-}
-
-class ConcreteImplementationB implements Implementation {
-    operationImplementation(): string {
-        return 'ConcreteImplementationB: Here\'s the result on the platform B.';
-    }
-}
-
-class Abstraction {
-    protected implementation: Implementation;
-
-    constructor(implementation: Implementation) {
-        this.implementation = implementation;
-    }
-
-    operation(): string {
-        return `Abstraction: Base operation with:\n${this.implementation.operationImplementation()}`;
-    }
-}
-
-const implementationA = new ConcreteImplementationA();
-let abstraction = new Abstraction(implementationA);
-console.log(abstraction.operation()); // Abstraction: Base operation with: ConcreteImplementationA: Here's the result on the platform A.
-
-const implementationB = new ConcreteImplementationB();
-abstraction = new Abstraction(implementationB);
-console.log(abstraction.operation()); // Abstraction: Base operation with: ConcreteImplementationB: Here's the result on the platform B.
-```
-
----
-
-### 8. **Composite Pattern**
 Composes objects into tree structures to represent part-whole hierarchies.
 
 **When to use**: When you need to treat individual objects and compositions of objects uniformly.  
 **Why to use**: To simplify client code that deals with complex tree structures.
+
 ```typescript
 interface Component {
     operation(): string;
@@ -333,13 +289,13 @@ tree.add(branch2);
 console.log(tree.operation()); // Branch(Branch(Leaf)+Branch(Leaf))
 ```
 
----
+### **Decorator Pattern**
 
-### 9. **Decorator Pattern**
 Adds additional responsibilities to an object dynamically.
 
 **When to use**: When you need to add responsibilities to objects dynamically.  
 **Why to use**: To avoid subclassing for functionalities.
+
 ```typescript
 interface Component {
     operation(): string;
@@ -385,13 +341,13 @@ const decorator2 = new ConcreteDecoratorB(decorator1);
 console.log(decorator2.operation()); // ConcreteDecoratorB(ConcreteDecoratorA(ConcreteComponent))
 ```
 
----
+### **Facade Pattern**
 
-### 10. **Facade Pattern**
 Provides a simplified interface to a complex subsystem.
 
 **When to use**: When you need to provide a simple interface to a complex subsystem.  
 **Why to use**: To hide the complexities of the system.
+
 ```typescript
 class Subsystem1 {
     operation1(): string {
@@ -437,13 +393,13 @@ const facade = new Facade(subsystem1, subsystem2);
 console.log(facade.operation());
 ```
 
----
+### **Flyweight Pattern**
 
-### 11. **Flyweight Pattern**
 Uses sharing to support large numbers of fine-grained objects efficiently.
 
 **When to use**: When a large number of similar objects are needed.  
 **Why to use**: To reduce memory consumption.
+
 ```typescript
 class Flyweight {
     private sharedState: any;
@@ -498,13 +454,13 @@ const flyweight2 = factory.getFlyweight(['Mercedes Benz', 'C300', 'black']);
 flyweight2.operation(['Jane Doe', 'CL234IR']);
 ```
 
----
+### **Proxy Pattern**
 
-### 12. **Proxy Pattern**
 Provides a surrogate or placeholder for another object to control access to it.
 
 **When to use**: When you need a more versatile or sophisticated reference to an object.  
 **Why to use**: To control access and add additional functionality.
+
 ```typescript
 interface Subject {
     request(): void;
@@ -545,69 +501,13 @@ const proxy = new Proxy(realSubject);
 proxy.request(); // Proxy: Checking access prior to firing a real request. RealSubject: Handling request. Proxy: Logging the time of request.
 ```
 
----
+### **Command Pattern**
 
-### 13. **Chain of Responsibility Pattern**
-Passes a request along a chain of handlers.
-
-**When to use**: When more than one object can handle a request.  
-**Why to use**: To decouple sender and receiver.
-```typescript
-interface Handler {
-    setNext(handler: Handler): Handler;
-    handle(request: string): string;
-}
-
-abstract class AbstractHandler implements Handler {
-    private nextHandler: Handler;
-
-    public setNext(handler: Handler): Handler {
-        this.nextHandler = handler;
-        return handler;
-    }
-
-    public handle(request: string): string {
-        if (this.nextHandler) {
-            return this.nextHandler.handle(request);
-        }
-        return null;
-    }
-}
-
-class MonkeyHandler extends AbstractHandler {
-    public handle(request: string): string {
-        if (request === 'Banana') {
-            return `Monkey: I'll eat the ${request}.`;
-        }
-        return super.handle(request);
-    }
-}
-
-class SquirrelHandler extends AbstractHandler {
-    public handle(request: string): string {
-        if (request === 'Nut') {
-            return `Squirrel: I'll eat the ${request}.`;
-        }
-        return super.handle(request);
-    }
-}
-
-const monkey = new MonkeyHandler();
-const squirrel = new SquirrelHandler();
-
-monkey.setNext(squirrel);
-
-console.log(monkey.handle('Banana')); // Monkey: I'll eat the Banana.
-console.log(monkey.handle('Nut')); // Squirrel: I'll eat the Nut.
-```
-
----
-
-### 14. **Command Pattern**
 Turns a request into a stand-alone object that contains all information about the request.
 
 **When to use**: When you want to parameterize objects with operations.  
 **Why to use**: To encapsulate requests as objects.
+
 ```typescript
 interface Command {
     execute(): void;
@@ -684,13 +584,13 @@ invoker.setOnFinish(new ComplexCommand(receiver, 'Send email', 'Save report'));
 invoker.doSomethingImportant();
 ```
 
----
+### **Iterator Pattern**
 
-### 15. **Iterator Pattern**
 Provides a way to access elements of a collection sequentially without exposing its underlying representation.
 
 **When to use**: When you need to traverse a collection without exposing its implementation.  
 **Why to use**: To provide a standard way to iterate over a collection.
+
 ```typescript
 interface Iterator<T> {
     next(): T;
@@ -741,13 +641,13 @@ while (iterator.hasNext()) {
 }
 ```
 
----
+### **Mediator Pattern**
 
-### 16. **Mediator Pattern**
 Defines an object that encapsulates how a set of objects interact.
 
 **When to use**: When you need to reduce the complexity of communication between objects.  
 **Why to use**: To promote loose coupling by keeping objects from referring to each other explicitly.
+
 ```typescript
 interface Mediator {
     notify(sender: object, event: string): void;
@@ -818,13 +718,13 @@ c1.doA();
 c2.doD();
 ```
 
----
+### **Memento Pattern**
 
-### 17. **Memento Pattern**
 Captures and externalizes an object's internal state without violating encapsulation, so the object can be restored to this state later.
 
 **When to use**: When you need to restore an object to a previous state.  
 **Why to use**: To provide the ability to restore an object to its previous state.
+
 ```typescript
 class Memento {
     private state: string;
@@ -892,13 +792,13 @@ caretaker.undo(); // Caretaker: Restoring state to: State2
 caretaker.undo(); // Caretaker: Restoring state to: State1
 ```
 
----
+### **Observer Pattern**
 
-### 18. **Observer Pattern**
 Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
 **When to use**: When you need many other objects to receive an update when another object changes.  
 **Why to use**: To allow a single object to notify multiple other objects about changes in its state.
+
 ```typescript
 interface Observer {
     update(subject: Subject): void;
@@ -965,265 +865,4 @@ subject.attach(observer2);
 
 subject.someBusinessLogic();
 subject.someBusinessLogic();
-```
-
----
-
-### 19. **State Pattern**
-Allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
-
-**When to use**: When an object must change its behavior at runtime depending on its state.  
-**Why to use**: To simplify state-specific behavior and transitions.
-```typescript
-class Context {
-    private state: State;
-
-    constructor(state: State) {
-        this.transitionTo(state);
-    }
-
-    public transitionTo(state: State): void {
-        console.log(`Context: Transition to ${(<any>state).constructor.name}.`);
-        this.state = state;
-        this.state.setContext(this);
-    }
-
-    public request1(): void {
-        this.state.handle1();
-    }
-
-    public request2(): void {
-        this.state.handle2();
-    }
-}
-
-abstract class State {
-    protected context: Context;
-
-    public setContext(context: Context) {
-        this.context = context;
-    }
-
-    public abstract handle1(): void;
-    public abstract handle2(): void;
-}
-
-class ConcreteStateA extends State {
-    public handle1(): void {
-        console.log('ConcreteStateA handles request1.');
-        console.log('ConcreteStateA wants to change the state of the context.');
-        this.context.transitionTo(new ConcreteStateB());
-    }
-
-    public handle2(): void {
-        console.log('ConcreteStateA handles request2.');
-    }
-}
-
-class ConcreteStateB extends State {
-    public handle1(): void {
-        console.log('ConcreteStateB handles request1.');
-    }
-
-    public handle2(): void {
-        console.log('ConcreteStateB handles request2.');
-        console.log('ConcreteStateB wants to change the state of the context.');
-        this.context.transitionTo(new ConcreteStateA());
-    }
-}
-
-const context = new Context(new ConcreteStateA());
-context.request1();
-context.request2();
-```
-
----
-
-### 20. **Strategy Pattern**
-Defines a family of algorithms, encapsulates each one, and makes them interchangeable. 
-
-**When to use**: When you have multiple algorithms for a specific task and you want to switch between them at runtime.  
-**Why to use**: To choose the appropriate algorithm at runtime.
-```typescript
-interface Strategy {
-    doAlgorithm(data: string[]): string[];
-}
-
-class ConcreteStrategyA implements Strategy {
-    public doAlgorithm(data: string[]): string[] {
-        return data.sort();
-    }
-}
-
-class ConcreteStrategyB implements Strategy {
-    public doAlgorithm(data: string[]): string[] {
-        return data.reverse();
-    }
-}
-
-class Context {
-    private strategy: Strategy;
-
-    constructor(strategy: Strategy) {
-        this.strategy = strategy;
-    }
-
-    public setStrategy(strategy: Strategy) {
-        this.strategy = strategy;
-    }
-
-    public doSomeBusinessLogic(): void {
-        const result = this.strategy.doAlgorithm(['a', 'b', 'c', 'd', 'e']);
-        console.log(result.join(','));
-    }
-}
-
-const context = new Context(new ConcreteStrategyA());
-context.doSomeBusinessLogic(); // a,b,c,d,e
-
-context.setStrategy(new ConcreteStrategyB());
-context.doSomeBusinessLogic(); // e,d,c,b,a
-```
-
----
-
-### 21. **Template Method Pattern**
-Defines the skeleton of an algorithm in a method, deferring some steps to subclasses.
-
-**When to use**: When you want to let subclasses redefine certain steps of an algorithm without changing its structure
-
-.  
-**Why to use**: To prevent code duplication and ensure the algorithm's structure stays unchanged.
-```typescript
-abstract class AbstractClass {
-    public templateMethod(): void {
-        this.baseOperation1();
-        this.requiredOperations1();
-        this.baseOperation2();
-        this.hook1();
-        this.requiredOperations2();
-        this.baseOperation3();
-        this.hook2();
-    }
-
-    protected baseOperation1(): void {
-        console.log('AbstractClass says: I am doing the bulk of the work');
-    }
-
-    protected baseOperation2(): void {
-        console.log('AbstractClass says: But I let subclasses override some operations');
-    }
-
-    protected baseOperation3(): void {
-        console.log('AbstractClass says: But I am doing the bulk of the work anyway');
-    }
-
-    protected abstract requiredOperations1(): void;
-    protected abstract requiredOperations2(): void;
-
-    protected hook1(): void { }
-    protected hook2(): void { }
-}
-
-class ConcreteClass1 extends AbstractClass {
-    protected requiredOperations1(): void {
-        console.log('ConcreteClass1 says: Implemented Operation1');
-    }
-
-    protected requiredOperations2(): void {
-        console.log('ConcreteClass1 says: Implemented Operation2');
-    }
-}
-
-class ConcreteClass2 extends AbstractClass {
-    protected requiredOperations1(): void {
-        console.log('ConcreteClass2 says: Implemented Operation1');
-    }
-
-    protected requiredOperations2(): void {
-        console.log('ConcreteClass2 says: Implemented Operation2');
-    }
-
-    protected hook1(): void {
-        console.log('ConcreteClass2 says: Overridden Hook1');
-    }
-}
-
-const concreteClass1 = new ConcreteClass1();
-concreteClass1.templateMethod();
-
-const concreteClass2 = new ConcreteClass2();
-concreteClass2.templateMethod();
-```
-
----
-
-### 22. **Visitor Pattern**
-Lets you separate algorithms from the objects on which they operate.
-
-**When to use**: When you need to perform operations across a heterogeneous collection of objects.  
-**Why to use**: To avoid polluting object classes with unrelated behaviors.
-```typescript
-interface Visitor {
-    visitConcreteComponentA(element: ConcreteComponentA): void;
-    visitConcreteComponentB(element: ConcreteComponentB): void;
-}
-
-class ConcreteVisitor1 implements Visitor {
-    public visitConcreteComponentA(element: ConcreteComponentA): void {
-        console.log(`${element.exclusiveMethodOfConcreteComponentA()} + ConcreteVisitor1`);
-    }
-
-    public visitConcreteComponentB(element: ConcreteComponentB): void {
-        console.log(`${element.specialMethodOfConcreteComponentB()} + ConcreteVisitor1`);
-    }
-}
-
-class ConcreteVisitor2 implements Visitor {
-    public visitConcreteComponentA(element: ConcreteComponentA): void {
-        console.log(`${element.exclusiveMethodOfConcreteComponentA()} + ConcreteVisitor2`);
-    }
-
-    public visitConcreteComponentB(element: ConcreteComponentB): void {
-        console.log(`${element.specialMethodOfConcreteComponentB()} + ConcreteVisitor2`);
-    }
-}
-
-interface Component {
-    accept(visitor: Visitor): void;
-}
-
-class ConcreteComponentA implements Component {
-    public accept(visitor: Visitor): void {
-        visitor.visitConcreteComponentA(this);
-    }
-
-    public exclusiveMethodOfConcreteComponentA(): string {
-        return 'A';
-    }
-}
-
-class ConcreteComponentB implements Component {
-    public accept(visitor: Visitor): void {
-        visitor.visitConcreteComponentB(this);
-    }
-
-    public specialMethodOfConcreteComponentB(): string {
-        return 'B';
-    }
-}
-
-const components = [new ConcreteComponentA(), new ConcreteComponentB()];
-
-console.log('The client code works with all visitors via the base Visitor interface:');
-const visitor1 = new ConcreteVisitor1();
-for (const component of components) {
-    component.accept(visitor1);
-}
-
-console.log('It allows the same client code to work with different types of visitors:');
-const visitor2 = new ConcreteVisitor2();
-for (const component of components) {
-    component.accept(visitor2);
-}
 ```
