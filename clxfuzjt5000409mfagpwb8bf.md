@@ -3,7 +3,7 @@ title: "Learn to Type Fast"
 datePublished: Sun Apr 30 2023 10:41:48 GMT+0000 (Coordinated Universal Time)
 cuid: clxfuzjt5000409mfagpwb8bf
 slug: learn-typing-fast
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1730531090966/7a5cdc4d-7cd7-42d7-9193-69bc4a175d05.webp
+cover: static/images/v1730531090966/7a5cdc4d-7cd7-42d7-9193-69bc4a175d05.webp
 tags: speed, typing, keyboard, fast-typing
 
 ---

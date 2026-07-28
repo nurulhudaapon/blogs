@@ -6,7 +6,7 @@ slug: personal-reflection-on-university-life
 
 ---
 
-%[https://youtu.be/ZD78D-F4eA0?si=6FeVKqGKzAngIccM] 
+%[https://youtu.be/ZD78D-F4eA0?si=6FeVKqGKzAngIccM]
 
 ## Moments
 
@@ -14,37 +14,37 @@ I tried organizing Iftar with classmates from my section 4 times in all four yea
 
 ### **Year 1 (2022)**
 
-![Iftar at Dhaka](https://cdn.hashnode.com/res/hashnode/image/upload/v1739263347489/1087c989-ae06-45d9-80ea-dac0c7dcc22b.png align="center")
+![Iftar at Dhaka](static/images/v1739263347489/1087c989-ae06-45d9-80ea-dac0c7dcc22b.png)
 
 → Iftar at **Dhaka South.**
 
 ---
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1739263371306/a018eec0-25b3-4412-8bd0-adc724fd5348.png align="center")
+![](static/images/v1739263371306/a018eec0-25b3-4412-8bd0-adc724fd5348.png)
 
 → Iftar at **Narayanganj.**
 
 ---
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1739263417468/36392c3c-67d2-4624-a05e-3184ece77c96.png align="center")
+![](static/images/v1739263417468/36392c3c-67d2-4624-a05e-3184ece77c96.png)
 
 → Semester end day tour with DF Section.
 
 ### Year 2 (2023)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1739263514380/ad103576-dd1a-4cb1-b290-34a425047132.jpeg align="center")
+![](static/images/v1739263514380/ad103576-dd1a-4cb1-b290-34a425047132.jpeg)
 
 → Iftar at **Dhaka North.**
 
 ---
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1739263537725/1dd1b01b-bed4-4dc1-923a-4a0c688a0a57.jpeg align="center")
+![](static/images/v1739263537725/1dd1b01b-bed4-4dc1-923a-4a0c688a0a57.jpeg)
 
 → Semester final day tour to **Zinda Park.**
 
 ---
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1739263574460/5fe692cd-620e-4976-9bc1-e1e6b8509ab1.png align="center")
+![](static/images/v1739263574460/5fe692cd-620e-4976-9bc1-e1e6b8509ab1.png)
 
 → Semester finally day tour to **Jolshiri Central Park**.
 
@@ -56,18 +56,18 @@ I tried organizing Iftar with classmates from my section 4 times in all four yea
 
 ### Year 4 (2025)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1759673605918/353630b7-7e06-4c52-99e7-82031320bb81.jpeg align="center")
+![](static/images/v1759673605918/353630b7-7e06-4c52-99e7-82031320bb81.jpeg)
 
 → Iftar at **Naryanganj**
 
 ---
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1759673629084/e8b60cb7-8973-46e5-879a-1729bc8e9649.jpeg align="center")
+![](static/images/v1759673629084/e8b60cb7-8973-46e5-879a-1729bc8e9649.jpeg)
 
 → Iftar at **Dhaka South**
 
 ---
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1759673667748/4c3acbb1-fe57-47e9-a914-3f95993d29ae.jpeg align="center")
+![](static/images/v1759673667748/4c3acbb1-fe57-47e9-a914-3f95993d29ae.jpeg)
 
 → Iftar at **Dhaka North**

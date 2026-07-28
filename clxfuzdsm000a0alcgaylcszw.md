@@ -3,7 +3,7 @@ title: "How I Study While Working Full-Time"
 datePublished: Mon May 15 2023 07:51:18 GMT+0000 (Coordinated Universal Time)
 cuid: clxfuzdsm000a0alcgaylcszw
 slug: study-while-working-full-time
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1718440293832/e1207b01-6304-40fd-90e6-0d27e1c62d0c.png
+cover: static/images/v1718440293832/e1207b01-6304-40fd-90e6-0d27e1c62d0c.png
 
 ---
 
