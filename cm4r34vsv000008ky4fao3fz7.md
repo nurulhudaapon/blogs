@@ -5,8 +5,8 @@ seoDescription: "2024 highlights: travel, career growth, spiritual journeys, and
 datePublished: 2024-12-16T13:43:12.895Z
 cuid: cm4r34vsv000008ky4fao3fz7
 slug: 2024-year-in-review
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1734356363631/e8463120-43b0-47ba-a778-a7090b04cbe2.png
-ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1734886575388/5400bc39-b27d-4665-95cd-e4f7411929c3.png
+cover: /blog/images/v1734356363631/e8463120-43b0-47ba-a778-a7090b04cbe2.webp
+ogImage: /blog/images/v1734886575388/5400bc39-b27d-4665-95cd-e4f7411929c3.webp
 tags: 2024-year-in-review, life-update
 
 ---
@@ -34,9 +34,9 @@ Despite that, the tour was absolutely fantastic and particularly special as it w
 
 Here is more on [Saint Martin Island](https://en.wikipedia.org/wiki/St._Martin%27s_Island).
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1734175206181/7627cfc7-86c3-4f41-b40b-b3cd60cc7660.png align="left")
+![](/blog/images/v1734175206181/7627cfc7-86c3-4f41-b40b-b3cd60cc7660.webp align="left")
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1734872374426/dbfe3d2a-e644-4a8e-a9aa-643e749e51ec.png align="center")
+![](/blog/images/v1734872374426/dbfe3d2a-e644-4a8e-a9aa-643e749e51ec.webp)
 
 # Umrah
 
@@ -50,7 +50,7 @@ It was an awe-inspiring experience, seeing Muslims from all over the world and v
 
 An interesting part of my trip was that I had to spend some time in Medina coding for the CodeSamurai’24 Hackathon. It felt surreal to be coding while in such a holy city, but that's how my life goes. The picture below was taken right in front of Al-Masjid an-Nabawi (the [Prophet's Mosque).](https://en.wikipedia.org/wiki/Prophet%27s_Mosque)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1734175309192/0a6ae875-ce95-4bed-b23a-1f7367d53112.png align="center")
+![](/blog/images/v1734175309192/0a6ae875-ce95-4bed-b23a-1f7367d53112.webp)
 
 # **CodeSamurai’24**
 
@@ -64,7 +64,7 @@ We were lagging behind in phase 2, but somehow (well, not “somehow”—we wor
 
 Learn more about CodeSamurai here: [https://www.codesamuraibd.net/](https://www.codesamuraibd.net/)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1734884526025/50bb431c-b5e4-4f19-989b-428dbd77c5cd.png align="center")
+![](/blog/images/v1734884526025/50bb431c-b5e4-4f19-989b-428dbd77c5cd.webp)
 
 # **Promotion**
 
